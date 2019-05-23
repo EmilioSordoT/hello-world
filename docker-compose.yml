@@ -18,7 +18,7 @@ services:
     build: .
     ports:
       - 3000:3000
-    command: rails server -b 0.0.0.0 -p 3000 -P /usr/src/app/tmp/rails.pid
+    command: bin/spring rails server -b 0.0.0.0 -p 3000 -P /usr/src/app/tmp/rails.pid
     entrypoint: /usr/bin/entrypoint.sh
     volumes:
       - .:/usr/src/app
